@@ -1,7 +1,7 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import Padre from './components/padre.vue';
 </script>
 
 <template>
-  <HelloWorld />
+  <padre/>
 </template>
