@@ -1,7 +1,16 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import { RouterView } from 'vue-router'
+import Navbar from './components/Navbar.vue'
 </script>
 
 <template>
-  <HelloWorld />
+  <Navbar />
+
+  <main>
+    <RouterView />
+  </main>
+
+  <footer>
+    <p>Feria Artesanal de Ñuble · Actividad 11</p>
+  </footer>
 </template>
