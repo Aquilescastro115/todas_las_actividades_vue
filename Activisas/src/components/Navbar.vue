@@ -7,7 +7,6 @@ import { RouterLink } from 'vue-router'
     <div class="marca">
       <h2>Feria Ñuble</h2>
     </div>
-
     <nav>
       <RouterLink to="/">Inicio</RouterLink>
       <RouterLink to="/productos">Productos</RouterLink>

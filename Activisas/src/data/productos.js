@@ -6,7 +6,7 @@ export const productos = [
     comuna: 'Pinto',
     precio: 7500,
     descripcion: 'Miel artesanal producida en sectores cordilleranos de Ñuble.',
-    imagen: '/assets/miel.jpg'
+    imagen: '/miel.jpg'
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const productos = [
     comuna: 'Chillán',
     precio: 15990,
     descripcion: 'Canasto elaborado artesanalmente con fibras naturales.',
-    imagen: '/assets/canastos.webp'
+    imagen: '/canastos.webp'
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ export const productos = [
     comuna: 'San Carlos',
     precio: 4500,
     descripcion: 'Mermelada artesanal elaborada con frutos de temporada.',
-    imagen: '/assets/mermeladas.jpg'
+    imagen: '/mermeladas.jpg'
   },
   {
     id: 4,
@@ -33,6 +33,6 @@ export const productos = [
     comuna: 'Yungay',
     precio: 18990,
     descripcion: 'Producto textil elaborado manualmente por artesanos de Ñuble.',
-    imagen: '/assets/tejido.jpg'
+    imagen: '/tejido.jpg'
   }
 ]

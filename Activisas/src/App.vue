@@ -5,12 +5,10 @@ import Navbar from './components/Navbar.vue'
 
 <template>
   <Navbar />
-
   <main>
     <RouterView />
   </main>
-
   <footer>
-    <p>Feria Artesanal de Ñuble · Actividad 11</p>
+    <p>Feria Artesanal de Ñuble - Actividad 12</p>
   </footer>
 </template>

@@ -16,11 +16,9 @@ const productosFiltrados = computed(() => {
     const coincideTexto = producto.nombre
       .toLowerCase()
       .includes(buscar.value.toLowerCase())
-
     const coincideCategoria =
       categoria.value === 'Todas' ||
       producto.categoria === categoria.value
-
     return coincideTexto && coincideCategoria
   })
 })
@@ -31,7 +29,6 @@ function cambiarFavorito(id) {
   } else {
     favoritos.value.push(id)
   }
-
   localStorage.setItem('favoritos', JSON.stringify(favoritos.value))
 }
 
@@ -44,17 +41,14 @@ onMounted(() => {
 <template>
   <section class="pagina">
     <h1>Catálogo</h1>
-
     <div class="filtros">
       <input v-model="buscar" placeholder="Buscar producto..." />
-
       <select v-model="categoria">
         <option v-for="cat in categorias" :key="cat">
           {{ cat }}
         </option>
       </select>
     </div>
-
     <div v-if="productosFiltrados.length" class="productos-grid">
       <ProductoCard
         v-for="producto in productosFiltrados"
@@ -64,7 +58,6 @@ onMounted(() => {
         @cambiar-favorito="cambiarFavorito"
       />
     </div>
-
     <p v-else>No existen productos que coincidan con la búsqueda.</p>
   </section>
 </template>
