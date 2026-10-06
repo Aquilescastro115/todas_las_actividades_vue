@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import InicioView from '../views/InicioView.vue'
 import ProductosView from '../views/servicios.vue/index.js'
-import ProductoDetalleView from '../views/ProductoDetalleView.vue'
+import ProductoDetalleView from '../views/serviciosDetalleView.vue/index.js'
 import FavoritosView from '../views/FavoritosView.vue'
 import ContactoView from '../views/ContactoView.vue'
 import NotFoundView from '../views/NotFoundView.vue'

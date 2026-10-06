@@ -1,7 +1,7 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue'
-import ProductoCard from '../components/ProductoCard.vue'
-import { productos } from '../data/productos'
+import ProductoCard from '../components/serviciosCard.vue/index.js'
+import { productos } from '../data/productos.js'
 
 const buscar = ref('')
 const categoria = ref('Todas')
@@ -58,6 +58,6 @@ onMounted(() => {
         @cambiar-favorito="cambiarFavorito"
       />
     </div>
-    <p v-else>No existen productos que coincidan con la búsqueda.</p>
+    <p v-else>No existen servicios que coincidan con la búsqueda.</p>
   </section>
 </template>
