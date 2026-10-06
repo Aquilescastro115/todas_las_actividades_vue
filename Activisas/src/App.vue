@@ -9,6 +9,6 @@ import Navbar from './components/Navbar.vue'
     <RouterView />
   </main>
   <footer>
-    <p>Feria Artesanal de Ñuble - Actividad 12</p>
+    <p>Feria Artesanal de Ñuble - certamen 2</p>
   </footer>
 </template>

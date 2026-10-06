@@ -1,6 +1,6 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue'
-import ProductoCard from '../components/serviciosCard.vue/index.js'
+import serviciosCard from '../components/serviciosCard.vue'
 import { productos } from '../data/productos'
 
 const favoritos = ref([])
@@ -44,7 +44,7 @@ function limpiarFavoritos() {
     </div>
 
     <div v-if="productosFavoritos.length" class="productos-grid">
-      <ProductoCard
+      <serviciosCard
         v-for="producto in productosFavoritos"
         :key="producto.id"
         :producto="producto"
@@ -54,7 +54,7 @@ function limpiarFavoritos() {
     </div>
     <div v-else>
       <p>Aún no has seleccionado productos favoritos.</p>
-      <RouterLink to="/productos">Revisar catálogo</RouterLink>
+      <RouterLink to="/servicios">Revisar catálogo</RouterLink>
     </div>
   </section>
 </template>

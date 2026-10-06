@@ -20,7 +20,7 @@ const emit = defineEmits(['cambiar-favorito'])
       <p>{{ producto.descripcion }}</p>
       <strong>${{ producto.precio.toLocaleString('es-CL') }}</strong>
       <div class="acciones">
-        <RouterLink :to="`/productos/${producto.id}`">
+        <RouterLink :to="`/servicios/${producto.id}`">
           Ver detalle
         </RouterLink>
         <button @click="emit('cambiar-favorito', producto.id)">

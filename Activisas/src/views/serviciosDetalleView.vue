@@ -13,7 +13,6 @@ const producto = computed(() => {
 <template>
   <section class="pagina">
     <div v-if="producto" class="detalle-producto">
-      <img :src="producto.imagen" :alt="producto.nombre" />
 
       <div>
         <span>{{ producto.categoria }}</span>
@@ -21,7 +20,7 @@ const producto = computed(() => {
         <p>{{ producto.descripcion }}</p>
         <h2>${{ producto.precio.toLocaleString('es-CL') }}</h2>
         <p>disponible: {{ producto.disponible }}</p>
-        <RouterLink to="/productos">← Volver al catálogo</RouterLink>
+        <RouterLink to="/servicios">← Volver al catálogo</RouterLink>
       </div>
     </div>
 

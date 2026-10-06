@@ -1,6 +1,6 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue'
-import ProductoCard from '../components/serviciosCard.vue/index.js'
+import serviciosCard from '../components/serviciosCard.vue'
 import { productos } from '../data/productos.js'
 
 const buscar = ref('')
@@ -50,7 +50,7 @@ onMounted(() => {
       </select>
     </div>
     <div v-if="productosFiltrados.length" class="productos-grid">
-      <ProductoCard
+      <serviciosCard
         v-for="producto in productosFiltrados"
         :key="producto.id"
         :producto="producto"
