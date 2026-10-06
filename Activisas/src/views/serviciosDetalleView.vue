@@ -25,8 +25,8 @@ const producto = computed(() => {
     </div>
 
     <div v-else>
-      <h2>Producto no encontrado</h2>
-      <RouterLink to="/productos">Volver</RouterLink>
+      <h2>servicio no encontrado</h2>
+      <RouterLink to="/servicios">Volver</RouterLink>
     </div>
   </section>
 </template>

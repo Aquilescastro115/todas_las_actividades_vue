@@ -1,14 +1,14 @@
 <template>
   <section class="hero">
     <div>
-      <p class="etiqueta">Productos locales</p>
-      <h1>Feria Artesanal de Ñuble</h1>
+      <p class="etiqueta">servicios locales</p>
+      <h1>servicios de Ñuble</h1>
       <p>
-        Conoce productos creados por emprendedores y artesanos
+        Conoce servicios creados por emprendedores y artesanos
         de distintas comunas de la Región de Ñuble.
       </p>
-      <RouterLink to="/productos" class="boton-principal">
-        Ver productos
+      <RouterLink to="/servicios" class="boton-principal">
+        Ver servicios
       </RouterLink>
     </div>
   </section>
