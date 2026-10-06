@@ -14,11 +14,10 @@ const emit = defineEmits(['cambiar-favorito'])
 
 <template>
   <article class="producto-card">
-    <img :src="producto.imagen" :alt="producto.nombre" />
     <div class="contenido-producto">
       <span class="categoria">{{ producto.categoria }}</span>
       <h3>{{ producto.nombre }}</h3>
-      <p>{{ producto.comuna }}</p>
+      <p>{{ producto.descripcion }}</p>
       <strong>${{ producto.precio.toLocaleString('es-CL') }}</strong>
       <div class="acciones">
         <RouterLink :to="`/productos/${producto.id}`">
